@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        功能概述：
+        1、点击 Tab 能够切换不同内容；
+        2、点击加号，能够添加 Tab 按钮；
+        3、点击 Tab 按钮，可以删除当前 Tab 按钮和对应的内容；
+        4、修改 Tab 按钮内的文字、修改 Tab 对应内容里面的文字
+
+        抽象对象
+        1、具有切换功能
+        2、具有添加功能
+        3、局域删除功能
+        4、具有删除功能
+     -->
+
+    <main>
+        <h4>JavaScript 面向对象，动态添加选项卡</h4>
+        <div id="tab">
+            <!-- 标签 -->
+            <nav class="tabbar">
+                <ul class="tab-list clearfix">
+                    <li class="tab-item">
+                        <span>测试1</span>
+                        <i class="close fa fa-close"></i>
+                    </li>
+                    <li class="tab-item">
+                        <span>测试2</span>
+                        <i class="close fa fa-close"></i>
+                    </li>
+                    <li class="tab-item">
+                        <span>测试3</span>
+                        <i class="close fa fa-close"></i>
+                    </li>
+                </ul>
+                <div class="tabadd">
+                    <span class="fa fa-plus"></span>
+                </div>
+            </nav>
+            <!-- 内容 -->
+            <div class="tab-content">
+                <section class="content-item">测试1内容</section>
+                <section class="content-item">测试2内容1</section>
+                <section class="content-item">测试3内容</section>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script src="js/tab.js"></script>
+</body>
+
+</html>

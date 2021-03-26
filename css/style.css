@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: none;
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* main */
+main {
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+main h4 {
+  padding: 15px 0;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+/* tabbar */
+.tabbar {
+  position: relative;
+}
+
+.tabbar .tabadd {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.tab-item {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.tab-item.active {
+  background-color: #eee;
+}
+
+.tab-item span {
+  display: block;
+  position: relative;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.tab-item span input {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 80%;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.tab-item .fa {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  background-color: #000;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.tab-content {
+  padding: 20px;
+  height: 303px;
+  background-color: #ccc;
+}
+
+.tab-content .content-item {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.tab-content .content-item.active {
+  display: block;
+}
+
+.tab-content .content-item input {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
